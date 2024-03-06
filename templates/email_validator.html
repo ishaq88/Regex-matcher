@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validator</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-link" href="/">Regex Matcher</a>
+            <a class='navbar-link' href="/emailvalidator">Email Validator</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        
+        
+            
+        <div class="form-container">
+            
+            <h1>Email(s) Validator</h1>
+            
+            <form action="" method="post">
+                <label for="string">Test Email(s)</label>
+                <textarea id="string" name="string" rows="5" placeholder="Enter email(s) to validate"></textarea>
+                </br>
+        
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="results-container">
+            <h1>Matches Information</h1>
+            {% if matches %} 
+            <p>{{matches|length}} matches found.</p> <ul> 
+                {% for match in matches %}
+                    <li>{{match}}</li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p>No valid emails</p>
+            {% endif %} 
+       </div>
+    </div>
+</body>
+</html>

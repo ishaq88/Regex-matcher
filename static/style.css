@@ -1,0 +1,122 @@
+body {
+    background-color: #23292c;
+    font-family: 'Poppins', sans-serif;  
+    color: #d1d0d0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.1rem;
+}
+
+.form-container {
+    width: 60%;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: #343a40;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.results-container {
+    width: 40%;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: #343a40;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.results-container-lists {
+    margin-top: 10px; 
+  }
+  
+  .results-container-lists p {
+    font-size: 16px;
+    margin-bottom: 5px; 
+  }
+  
+  .results-container-lists ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+
+  }
+  
+  .results-container-lists li {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+.navbar-link {
+    justify-content: space-around;
+    color: #ccd0cd;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: #f7f7f7;
+    background-color: #202528;
+    box-sizing: border-box;
+    border-color: #202528;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: #f7f7f7;
+    background-color: #202528;
+    box-sizing: border-box;
+    border-color: #202528;
+}
+
+button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #4CAF50;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .form-container, .results-container {
+        width: 100%;
+    }
+}
